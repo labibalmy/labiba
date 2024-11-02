@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+    <header><h2>Formulir Anggota Perpustakaan</h2></header>
+        <form class="form" action="#">
+            <div class="input-box">
+                <h3>Nama</h3>
+                <div class="input">
+                <input type="text" placeholder="Masukkan nama">
+                </div>
+                <div>
+            <div class="input-box">
+                    <h3>Kota Lahir</h3>
+                    <div class="input">
+                    <input type="text" list="kota_lahir" name="kota_lahir" placeholder="Pilih/masukkan kota lahir">
+                    <datalist id="kota_lahir">
+                    <option value="Semarang">
+                    <option value="Jakarta">
+                    <option value="Bandung">
+                    <option value="Palembang">
+                    <option value="Banten"></option>
+                </datalist>
+                </div>
+            </div>
+            <div class="input-box">
+                <h3>Tanggal lahir</h3>
+                <div class="input">
+                <input type="date" required>
+            </div>    
+            <div class="gender">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gdr">
+                        <input type="radio" id="Wanita" name="gender">
+                         <label for="Wanita">Wanita</label>
+                    </div>
+                    <div class="gdr">
+                        <input type="radio" name="gender" value="Pria">
+                        <label for="Pria">Pria</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <h3>No Telepon</h3>
+                <div class="input">
+                    <input type="number" placeholder="ketikkan no telepon kamu" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <h3>Makanan Favorite</h3>
+                <input type="checkbox" name="Makanan_Favorit" value="Nasi Goreng">Nasi Goreng
+                <input type="checkbox" name="Makanan_Favorit" value="Indomie">Indomie
+            </div>
+            <div class="input-box">
+                    <h3>Agama</h3> 
+                    <div class="input">
+                    <select name="pilih">
+                        <div class="input">
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Buddha">Buddha</option>
+                            <option value="Konghuchu">Konghuchu</option>
+                        </div>
+                    </select>
+                    </div>
+            </div>
+            <div class="input-box address">
+                <h3>Alamat</h3>
+                <div class="input">
+                <input type="text" placeholder="Masukkan Alamat">
+                </div>
+            </div>
+            <div class="column">
+                <button>Clear</button>
+                <button>Send</button>
+            </div>
+        </form>
+    </div>
+ </body>
+</html>
